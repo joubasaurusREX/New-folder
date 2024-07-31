@@ -222,7 +222,7 @@ section {
 }
 
 .btn-color-1,
-.btn-color-2 :hover {
+.btn-color-2 {
   background: rgb(53, 53, 53);
   color: white;
 }
@@ -232,12 +232,9 @@ section {
   color: black;
 }
 
-.btn-color-2 {
-  background-color: none;
-}
-
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  background: rgb(255, 255, 255);
+  color: black;
 }
 
 .btn-container {
@@ -252,7 +249,6 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -260,11 +256,11 @@ section {
   justify-content: center;
   flex-direction: column;
   display: flex;
-  align-items: flex-end;
+  flex: 1;
 }
 
 .about-containers,
-.about {
+.about-details-container {
   display: flex;
 }
 
@@ -276,8 +272,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1rem;
-  height: 30%;
+  flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -288,6 +283,9 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .text-container {
